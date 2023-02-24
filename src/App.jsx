@@ -26,9 +26,9 @@ function App(props) {
   }
   return (
     <React.Fragment>
-      <Navbar />
-      <div className="Container flex flex-col gap-5 w-2/4 mx-auto justify-center">
-        <ControlBtn functions={{handelReset} }/>
+      <Navbar CountersLength={Counters.length} />
+      <div className="Container flex flex-col gap-5 w-2/4 mx-auto justify-center items-center">
+        <ControlBtn functions={{handelReset} } />
         {Counters.map((item, index) => {
           return (
             <Counter
